@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* Outer Container Frame */
+.container {
+    width: 850px;
+    background-color: #ffffff;
+    border: 1px solid #777;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+/* --- 1. HEADER SECTION --- */
+.header {
+    height: 180px;
+    /* Replace with your blue wave background image path */
+    background: #1a62bf url('header.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+/* Overlapping Stalked Images */
+.overlapping-images {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 120px;
+    height: 120px;
+}
+
+.overlapping-images img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    object-fit: cover;
+}
+
+.overlapping-images .img-1 {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.overlapping-images .img-2 {
+    top: 25px;
+    left: 20px;
+    z-index: 2;
+}
+
+.overlapping-images .img-3 {
+    top: 55px;
+    left: 40px;
+    z-index: 3;
+}
+
+/* --- 2. NAVIGATION BAR --- */
+.navbar {
+    background-color: #888888;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar a {
+    display: block;
+    padding: 10px 0;
+    color: #111;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar li.active {
+    background-color: #ff0000;
+}
+
+.navbar li.active a {
+    color: #ffffff;
+}
+
+/* --- 3. PINK SECTION & FAVOURITES TABLE --- */
+.pink-section {
+    background-color: #ffaec9;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.fav-table {
+    width: 240px;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: center;
+    border-radius: 18px;
+    overflow: hidden; /* Clips rows inside rounded corners */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.fav-table th {
+    background-color: #007026;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fav-table td {
+    padding: 8px 15px;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.fav-table img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+/* Alternating Green Rows */
+.fav-table .dark-row {
+    background-color: #008a2e;
+    color: #ffffff;
+}
+
+.fav-table .light-row {
+    background-color: #a8f539;
+    color: #000000;
+}
+
+/* --- 4. FORMS SECTION --- */
+.forms-section {
+    /* Replace with your dark keyboard background image path */
+    background: #333 url('bg.jpg') no-repeat center center/cover;
+    padding: 40px 0;
+}
+
+.forms-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Floating White Cards */
+.card {
+    background-color: #ffffff;
+    width: 280px;
+    padding: 25px 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px 10px;
+    background-color: #e6e6e6;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 11px;
+    outline: none;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #0052cc;
+}
+
+/* --- 5. FOOTER --- */
+footer {
+    background-color: #ffebd2;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    color: #222;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer .address {
+    margin-bottom: 5px;
+}
+
+footer .copyright {
+    font-weight: 500;
+}

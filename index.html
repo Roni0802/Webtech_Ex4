@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="overlapping-images">
+            <img src="flower.jpg" class="img-1" alt="Flower 1">
+            <img src="flower2.jpg" class="img-2" alt="Flower 2">
+            <img src="apple.jpg" class="img-3" alt="Apple">
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Myself</a></li>
+            <li><a href="#">Others</a></li>
+        </ul>
+    </nav>
+
+    <!-- Pink Section / Favourites Table -->
+    <section class="pink-section">
+        <table class="fav-table">
+            <thead>
+                <tr>
+                    <th colspan="2">Favourites</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="dark-row">
+                    <td>Item 1</td>
+                    <td><img src="apple.jpg" alt="Apple"></td>
+                </tr>
+                <tr class="light-row">
+                    <td>Item 2</td>
+                    <td><img src="orange.jpg" alt="Orange"></td>
+                </tr>
+                <tr class="light-row">
+                    <td>Item 3</td>
+                    <td><img src="grapes.jpg" alt="Grapes"></td>
+                </tr>
+                <tr class="dark-row">
+                    <td>Item 4</td>
+                    <td><img src="mango.jpg" alt="Mango"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Forms Section -->
+    <section class="forms-section">
+        <div class="forms-container">
+
+            <!-- Sign In Card -->
+            <div class="card">
+                <h2>Sign In</h2>
+                <form>
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" placeholder="Enter Username / Email / Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter Password">
+                    </div>
+                    <button type="button" class="btn-primary">Sign In</button>
+                </form>
+            </div>
+
+            <!-- Sign Up Card -->
+            <div class="card">
+                <h2>Sign Up</h2>
+                <form>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter Password">
+                    </div>
+                    <button type="button" class="btn-primary">Sign Up</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="address"><i>Your address</i></p>
+        <p class="copyright">
+            © 2020-2021. (Register number) - Web Technology Lab Batch 1. All Rights Reserved.
+        </p>
+    </footer>
+
+</div>
+
+</body>
+</html>
